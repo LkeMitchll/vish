@@ -2,20 +2,25 @@
 
 > A simple NeoVim plugin manager for fish
 
-Install, uninstall and update plugins using fish. A simple wrapper around the vim `:pack` functionality.
+Install, uninstall and update plugins using fish. A simple wrapper around the
+vim `:pack` functionality.
+
+**NOTE** This is very, very alpha, it's something I pretty much built for myself,
+as such vish is opionionated If anyone is paricularly intersted in using it, do
+so at you own risk.
 
 ## Installation
 
-It's recommended that you install using [fisher](https://github.com/jorgebucaran/fisher)
+It's recommended that you install using [fisher]
 
 **Requirements**
 
-- [fish](http://fishshell.com)
-- [neovim](https://neovim.io)
-- [git](https://git-scm.com)
+- [fish]
+- [neovim]
+- [git]
 
-```console
-fisher add lkemitchll/vish
+``` {.console}
+fisher add lkemitchll/vish@main
 vish init
 ```
 
@@ -25,7 +30,7 @@ vish init
 
 Install a plugin with the `install` (or `i`) command:
 
-```console
+``` {.console}
 vish install tpope/vim-fugitive
 ```
 
@@ -33,7 +38,7 @@ vish install tpope/vim-fugitive
 
 Uninstall a plugin with the `uninstall` (or `u`) command:
 
-```console
+``` {.console}
 vish uninstall vim-fugitive
 ```
 
@@ -41,7 +46,7 @@ vish uninstall vim-fugitive
 
 Update all installed plugins with the `update` command:
 
-```console
+``` {.console}
 vish update
 ```
 
@@ -49,14 +54,20 @@ vish update
 
 List all installed plugins with the `list` (or `ls`) command:
 
-```console
+``` {.console}
 vish list
 ```
 
-```console
+``` {.console}
 vish list fugitive
 ```
 
 ### License
 
-[MIT](LICENSE.md)
+[MIT]
+
+[fisher]: https://github.com/jorgebucaran/fisher
+[fish]: http://fishshell.com
+[neovim]: https://neovim.io
+[git]: https://git-scm.com
+[MIT]: LICENSE.md
